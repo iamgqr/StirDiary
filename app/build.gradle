@@ -3,6 +3,8 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
+    useLibrary 'org.apache.http.legacy'
+
     defaultConfig {
         applicationId "com.example.stirdiary"
         minSdkVersion 15
@@ -41,5 +43,6 @@ dependencies {
     implementation 'com.nhaarman.listviewanimations:lib-manipulation:3.1.0@aar'
     implementation 'com.nhaarman.listviewanimations:lib-core-slh:3.1.0@aar'
     implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.2'
 }
 
